@@ -44,8 +44,8 @@ class ProductRepositoryTest {
 
         //TODO Investigate how to invoke SELECT SQL in this case
         Product product2 = productRepository.findByIdSql(product.getId()).orElseThrow();
-     //   assertNotNull(product2);
-      //  assertEquals(product.getName(), product2.getName());
+        assertNotNull(product2);
+        assertEquals(product.getName(), product2.getName());
 
     }
 
